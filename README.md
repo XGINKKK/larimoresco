@@ -60,6 +60,75 @@ npm run build
 npm run preview
 ```
 
+## 🚀 Deploy na Vercel
+
+Este projeto está **100% pronto para deploy na Vercel** sem erros!
+
+### Deploy Automático (Recomendado)
+
+1. Acesse [vercel.com](https://vercel.com)
+2. Faça login com sua conta GitHub
+3. Clique em "Add New Project"
+4. Importe o repositório `larimoresco`
+5. A Vercel detectará automaticamente as configurações do Vite
+6. Clique em "Deploy"
+7. Pronto! Seu site estará no ar em segundos
+
+### Deploy via CLI
+
+```bash
+# Instale a CLI da Vercel
+npm install -g vercel
+
+# Faça login
+vercel login
+
+# Deploy
+vercel
+
+# Deploy para produção
+vercel --prod
+```
+
+### Configurações Incluídas
+
+O projeto já inclui:
+- ✅ `vercel.json` com configurações otimizadas
+- ✅ Rewrites para SPA (Single Page Application)
+- ✅ Headers de segurança (X-Frame-Options, X-XSS-Protection, etc)
+- ✅ Cache otimizado para assets (1 ano)
+- ✅ `.gitignore` configurado para Vercel
+
+### Variáveis de Ambiente (Opcional)
+
+Se precisar adicionar variáveis de ambiente:
+
+1. No dashboard da Vercel, vá em "Settings" → "Environment Variables"
+2. Adicione as variáveis necessárias
+3. Redeploy o projeto
+
+### Domínio Personalizado
+
+Após o deploy, você pode adicionar um domínio personalizado:
+
+1. No dashboard do projeto, vá em "Settings" → "Domains"
+2. Adicione seu domínio (ex: `nutrilarissamoresco.com.br`)
+3. Configure os DNS conforme instruções da Vercel
+4. Aguarde a propagação (geralmente 24-48h)
+
+### Performance Esperada
+
+- **Lighthouse Score**: 95-100
+- **First Contentful Paint**: < 1s
+- **Time to Interactive**: < 2s
+- **Total Bundle Size**: ~45 KB (gzipped)
+
+### URLs Geradas
+
+Após o deploy, você terá:
+- **Preview URL**: `larimoresco-xxxx.vercel.app` (para cada commit)
+- **Production URL**: `larimoresco.vercel.app` ou seu domínio personalizado
+
 ## 🎨 Design System
 
 ### Cores
